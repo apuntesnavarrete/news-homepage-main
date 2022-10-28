@@ -7,18 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
   <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+  
 
 </head>
 <body>
-  <header>
-    <img src="" alt="">
-    <div>-</div>
+  <header class="border-2 border-black flex flex-row justify-between p-4">
+    <img src="./assets/images/logo.svg" alt="" class="w-8 h-4">
     <ul>
       <li>Home</li>
       <li>New</li>
@@ -26,22 +28,24 @@
       <li>Trending</li>
       <li>Categories</li>
     </ul>  
+    <div class="border-2 border-black w-8 h-4">-</div>
+
   </header>
 
 <main>
-  <section class="principal-news">
-    <img src="" alt="">
-    <h1>  The Bright Future of Web 3.0?
+  <section class="principal-news border-2 border-black p-4">
+    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="">
+    <h1 class="font-bold text-5xl my-4">  The Bright Future of Web 3.0?
 </h1>
-    <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    <p class="text-sm	"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?</p>
-    <button>  Read more
+    <button class="w-28 h-8 bg-black my-4 text-white text-xs tracking-widest uppercase">  Read more
 </button>
   </section>
 
 
 
-  <section class="new-news">
+  <section class="new-news border-2 border-black">
     <h2>New</h2>
     <div>
       <h3>  Hydrogen VS Electric Cars
@@ -74,7 +78,7 @@
   </section>
 
 
-  <section>
+  <section class="top-news border-2 border-black">
     <div>
       <img src="" alt="">
       <div>
