@@ -16,6 +16,24 @@
   <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
   <script src="https://cdn.jsdelivr.net/npm/less" ></script>
   
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+
+            prymary:"hsl(36, 100%, 99%)",
+            secundary:"hsl(240, 100%, 5%)",
+            txtpry:"hsl(236, 13%, 42%)",
+            txtsecundary:"hsl(233, 8%, 79%)",
+            colorButton:"hsl(5, 85%, 63%)",
+            colorEspecial:"hsl(35, 77%, 62%)",
+
+          }
+        }
+      }
+    }
+  </script>
 
 </head>
 <body>
@@ -35,36 +53,36 @@
 <main>
   <section class="principal-news border-2 border-black p-4">
     <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="">
-    <h1 class="font-bold text-4xl my-4">  The Bright Future of Web 3.0?
+    <h1 class="font-bold text-4xl text-secundary my-4">  The Bright Future of Web 3.0?
 </h1>
-    <p class="text-sm	"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    <p class="text-sm	text-secundary"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?</p>
-    <button class="w-28 h-8 bg-black my-4 text-white text-xs tracking-widest uppercase">  Read more
+    <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase">  Read more
 </button>
   </section>
 
 
 
-  <section class="new-news border-2 border-black p-4 text-white bg-black">
-    <h2 class="bg-black text-blue-300 text-2xl">New</h2>
-    <div class="py-4 border-b border-slate-200	">
+  <section class="new-news border-2 border-black p-4 text-prymary bg-black">
+    <h2 class="bg-black text-colorEspecial text-2xl">New</h2>
+    <div class="py-4 border-b border-txt-pry	">
       <h3 class="font-bold">  Hydrogen VS Electric Cars
         </h3>
-      <p class="text-blue-50 text-xs">  Will hydrogen-fueled cars ever catch up to EVs?
+      <p class="text-txt-pry text-xs">  Will hydrogen-fueled cars ever catch up to EVs?
       </p>
     </div>
 
-    <div class="py-4 border-b border-slate-200	">
+    <div class="py-4 border-b border-txt-pry	">
       <h3 class="font-bold"> The Downsides of AI Artistry
         </h3>
-      <p class="text-blue-50 text-xs"> What are the possible adverse effects of on-demand AI image generation? 
+      <p class="text-txt-pry text-xs"> What are the possible adverse effects of on-demand AI image generation? 
       </p>
     </div>
 
     <div class="py-4">
       <h3 class="font-bold">Is VC Funding Drying Up? 
         </h3>
-      <p class="text-blue-50 text-xs">Private funding by VC firms is down 50% YOY. We take a look at what that means.
+      <p class="text-txt-pry text-xs">Private funding by VC firms is down 50% YOY. We take a look at what that means.
 </p> 
     
     </div>
@@ -74,7 +92,7 @@
   </section>
 
 
-  <section class="top-news border-2 border-black">
+  <section class="top-news border-2 border-black p-4">
     <div>
       <img src="" alt="">
       <div>
