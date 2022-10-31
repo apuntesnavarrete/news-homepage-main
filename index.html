@@ -20,6 +20,14 @@
     tailwind.config = {
       theme: {
         extend: {
+          
+          backgroundImage: {
+            'movil': "url('./assets/images/image-web-3-mobile.jpg')",
+            'desktop': "url('./assets/images/image-web-3-desktop.jpg')",
+
+          },
+
+
           colors: {
 
             prymary:"hsl(36, 100%, 99%)",
@@ -53,15 +61,29 @@
 
   </header>
 
-<main class="lg:grid lg:gap-4 lg:grid-cols-3 grid-rows-3">
-  <section class="principal-news p-4 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-3 ">
-    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="w-24">
-    <h1 class="font-bold text-4xl text-secundary my-4">  The Bright Future of Web 3.0?
+<main class="lg:grid lg:gap-4 lg:grid-cols-3 grid-rows-3 lg:py-8">
+  <section class="principal-news p-4 lg:p-0 lg:mx-4 lg:h-80 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-3 
+  lg:grid lg:grid-cols-2 grid-rows-5 
+  ">
+    <div alt="" class="bg-[url('./assets/images/image-web-3-mobile.jpg')] 
+    lg:bg-[url('./assets/images/image-web-3-desktop.jpg')] w-full h-72 lg:h-full bg-cover
+    lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 bg-center	
+    "> </div>
+    <h1 class="font-bold text-4xl text-secundary my-4 
+     lg:col-start-1 lg:col-end-2 lg:row-start-4 lg:row-end-6 lg:text-5xl">  The Bright Future of Web 3.0?
 </h1>
-    <p class="text-sm	text-txtpry leading-5"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?</p>
-    <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase font-bold">  Read more
-</button>
+    <div class="      lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-6 lg:py-6
+    ">
+      <p class="text-sm	text-txtpry leading-5
+      "> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    But is it really fulfilling its promise?</p>
+      <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase font-bold
+      ">  Read more
+  </button>
+
+
+    </div>
+   
   </section>
 
 
@@ -97,6 +119,7 @@
 
   <section class="top-news p-4 lg:flex lg:col lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-4 lg:h-40 lg:justify-between">
     <div class="w-full h32 flex flex-row gap-5 lg:w-80">
+
       <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-24	cover ">
       <div class="w-9/12 flex flex-col place-content-center gap-1">
         <p class="text-txtsecundary font-bold text-3xl	">  01
