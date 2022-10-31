@@ -42,32 +42,32 @@
 <body>
   <header class="flex flex-row justify-between p-4">
     <img src="./assets/images/logo.svg" alt="" class="w-8 h-4">
-    <ul>
-      <li>Home</li>
-      <li>New</li>
-      <li>Popular</li>
-      <li>Trending</li>
-      <li>Categories</li>
+    <ul class="hidden lg:block">
+      <li class="lg:inline-block lg:mx-2">Home</li>
+      <li class="lg:inline-block lg:mx-2">New</li>
+      <li class="lg:inline-block lg:mx-2">Popular</li>
+      <li class="lg:inline-block lg:mx-2">Trending</li>
+      <li class="lg:inline-block lg:mx-2">Categories</li>
     </ul>  
-    <img src="./assets/images/icon-menu.svg" alt="">
+    <img src="./assets/images/icon-menu.svg" alt="" class="lg:hidden">
 
   </header>
 
-<main>
-  <section class="principal-news p-4">
-    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="">
+<main class="lg:grid lg:gap-4 lg:grid-cols-3 grid-rows-3">
+  <section class="principal-news p-4 lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-3 ">
+    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="w-24">
     <h1 class="font-bold text-4xl text-secundary my-4">  The Bright Future of Web 3.0?
 </h1>
-    <p class="text-sm	text-secundary"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    <p class="text-sm	text-txtpry leading-5"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
   But is it really fulfilling its promise?</p>
-    <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase">  Read more
+    <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase font-bold">  Read more
 </button>
   </section>
 
 
 
-  <section class="new-news border-2 border-black p-4 text-prymary bg-secundary">
-    <h2 class="text-colorEspecial text-2xl">New</h2>
+  <section class="new-news border-2 border-black p-4 text-prymary bg-secundary lg:w-80 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3">
+    <h2 class="text-colorEspecial text-2xl font-bold">New</h2>
     <div class="py-4 border-b border-txt-pry	">
       <h3 class="font-bold">  Hydrogen VS Electric Cars
         </h3>
@@ -75,10 +75,10 @@
       </p>
     </div>
 
-    <div class="py-4 border-b border-txt-pry	leading-5">
+    <div class="py-4 border-b border-txt-pryleading-5">
       <h3 class="font-bold"> The Downsides of AI Artistry
         </h3>
-      <p class="text-txt-pry text-xs"> What are the possible adverse effects of on-demand AI image generation? 
+      <p class="text-txt-pry text-xs leading-5"> What are the possible adverse effects of on-demand AI image generation? 
       </p>
     </div>
 
@@ -95,11 +95,11 @@
   </section>
 
 
-  <section class="top-news border-2 border-black p-4">
-    <div class="w-full h32 flex flex-row gap-5">
+  <section class="top-news p-4 lg:flex lg:col lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-4 ">
+    <div class="w-full h32 flex flex-row gap-5 lg:w-80">
       <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-24	cover">
       <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-xl	">  01
+        <p class="text-txtsecundary font-bold text-3xl	">  01
 </p>
         <h4 class="text-secundary font-bold">  Reviving Retro PCs
 </h4>
@@ -109,10 +109,10 @@
     </div>
 
 
-    <div class="w-full h32 flex flex-row gap-5 py-4">
+    <div class="w-full h32 flex flex-row gap-5 py-4 lg:w-80">
       <img src="./assets/images/image-top-laptops.jpg" alt="" class="w-24	cover">
       <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-xl	">  02
+        <p class="text-txtsecundary font-bold text-3xl	">  02
 </p>
         <h4 class="text-secundary font-bold"> Top 10 Laptops of 2022 
 </h4>
@@ -121,10 +121,10 @@
       </div>
     </div>
 
-    <div class="w-full h32 flex flex-row gap-5">
+    <div class="w-full h32 flex flex-row gap-5 lg:w-80">
       <img src="./assets/images/image-gaming-growth.jpg" alt="" class="w-24	cover">
       <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-xl	">  03
+        <p class="text-txtsecundary font-bold text-3xl	">  03
 </p>
         <h4 class="text-secundary font-bold"> The Growth of Gaming
 </h4>
