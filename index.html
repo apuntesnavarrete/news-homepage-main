@@ -47,18 +47,18 @@
   </script>
 
 </head>
-<body class="xl:text-1xl">
+<body class="xl:text-1xl ">
   <header class="flex flex-row justify-between p-4 xl:p-8">
-    <img src="./assets/images/logo.svg" alt="" class=" w-8 h-4 xl:w-16 xl:h-8">
-    <ul class=" absolute right-0	lg:block p-8 w-60 h-full bg-prymary text-lg">
-      <li class="lg:inline-block py-4 lg:mx-2 flex justify-end"><img src="./assets/images/icon-menu-close.svg"></li>
+    <img src="./assets/images/logo.svg" alt=""  class="w-8 h-4 xl:w-16 xl:h-8">
+    <ul id="menu" class=" absolute -top-full right-0	lg:top-0	lg:block p-8 w-60 h-full bg-prymary text-lg">
+      <li class="lg:inline-block py-4 lg:mx-2 flex justify-end"><img src="./assets/images/icon-menu-close.svg" id="menu_close"></li>
       <li class="lg:inline-block py-4 lg:mx-2 ">Home</li>
       <li class="lg:inline-block py-4 lg:mx-2">New</li>
       <li class="lg:inline-block py-4 lg:mx-2">Popular</li>
       <li class="lg:inline-block py-4 lg:mx-2">Trending</li>
       <li class="lg:inline-block py-4 lg:mx-2">Categories</li>
     </ul>  
-    <img src="./assets/images/icon-menu.svg" alt="" class="hidden lg:hidden">
+    <img src="./assets/images/icon-menu.svg" alt="" id="button_menu" class="lg:hidden">
 
   </header>
 
@@ -171,5 +171,6 @@
   </section>
 </main>
  
+<script src="./js/index.js"></script>
 </body>
 </html>
