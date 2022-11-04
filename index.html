@@ -1,181 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
-  <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-  
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          
-          backgroundImage: {
-            'movil': "url('./assets/images/image-web-3-mobile.jpg')",
-            'desktop': "url('./assets/images/image-web-3-desktop.jpg')",
+    <title>Frontend Mentor | News homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet/less" type="text/css" href="./css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              movil: "url('./assets/images/image-web-3-mobile.jpg')",
+              desktop: "url('./assets/images/image-web-3-desktop.jpg')",
+            },
+
+            colors: {
+              prymary: "hsl(36, 100%, 99%)",
+              secundary: "hsl(240, 100%, 5%)",
+              txtpry: "hsl(236, 13%, 42%)",
+              txtsecundary: "hsl(233, 8%, 79%)",
+              colorButton: "hsl(5, 85%, 63%)",
+              colorEspecial: "hsl(35, 77%, 62%)",
+            },
           },
+        },
+      };
+    </script>
+  </head>
+  <body class="xl:text-1xl">
+    <header class="flex flex-row justify-between p-4 xl:p-8">
+      <img
+        src="./assets/images/logo.svg"
+        alt="logo letter w"
+        class="w-8 h-4 xl:w-16 xl:h-8"
+      />
+      <ul
+        id="menu"
+        class="absolute -top-full right-0 lg:top-0 lg:block p-8 lg:p-0 w-60 h-full bg-prymary text-lg lg:w-auto lg:h-16 lg:mx-4"
+      >
+        <li class="lg:inline-block py-4 lg:mx-2 flex justify-end lg:hidden">
+          <img src="./assets/images/icon-menu-close.svg" id="menu_close" />
+        </li>
+        <li
+          class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer"
+        >
+          Home
+        </li>
+        <li
+          class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer"
+        >
+          New
+        </li>
+        <li
+          class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer"
+        >
+          Popular
+        </li>
+        <li
+          class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer"
+        >
+          Trending
+        </li>
+        <li
+          class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer"
+        >
+          Categories
+        </li>
+      </ul>
+      <img
+        src="./assets/images/icon-menu.svg"
+        alt=""
+        id="button_menu"
+        class="lg:hidden"
+      />
+    </header>
 
+    <main class="lg:grid lg:gap-4 lg:grid-cols-3 grid-rows-3 lg:py-8">
+      <section
+        class="principal-news p-4 lg:p-0 lg:mx-4 lg:h-full lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-3 lg:grid lg:grid-cols-2 grid-rows-5"
+      >
+        <div
+          alt=""
+          class="bg-[url('./assets/images/image-web-3-mobile.jpg')] lg:bg-[url('./assets/images/image-web-3-desktop.jpg')] w-full h-72 lg:h-full bg-cover lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 bg-center"
+        ></div>
+        <h1
+          class="font-bold text-4xl text-secundary my-4 lg:col-start-1 lg:col-end-2 lg:row-start-4 lg:row-end-6 lg:text-5xl xl:text-7xl"
+        >
+          The Bright Future of Web 3.0?
+        </h1>
+        <div
+          class="lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-6 lg:py-6"
+        >
+          <p class="text-sm text-txtpry leading-5 xl:text-2xl">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button
+            class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase font-bold hover:bg-secundary cursor-pointer"
+          >
+            Read more
+          </button>
+        </div>
+      </section>
 
-          colors: {
+      <section
+        class="new-news self-center border-2 border-black p-4 text-prymary bg-secundary lg:h-full lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3 lg:flex lg:flex-col lg:justify-self-end xl:w-full xl:p-8"
+      >
+        <h2 class="text-colorEspecial text-2xl font-bold xl:text-4xl xl:py-4">
+          New
+        </h2>
+        <div class="py-4 border-b border-txt-pry">
+          <h3
+            class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer"
+          >
+            Hydrogen VS Electric Cars
+          </h3>
+          <p class="text-txt-pry text-xs leading-5 xl:text-2xl">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
 
-            prymary:"hsl(36, 100%, 99%)",
-            secundary:"hsl(240, 100%, 5%)",
-            txtpry:"hsl(236, 13%, 42%)",
-            txtsecundary:"hsl(233, 8%, 79%)",
-            colorButton:"hsl(5, 85%, 63%)",
-            colorEspecial:"hsl(35, 77%, 62%)",
+        <div class="py-4 border-b border-txt-pryleading-5">
+          <h3
+            class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer"
+          >
+            The Downsides of AI Artistry
+          </h3>
+          <p class="text-txt-pry text-xs leading-5 xl:text-2xl">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
 
-          }
-        }
-      }
-    }
+        <div class="py-4">
+          <h3
+            class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer"
+          >
+            Is VC Funding Drying Up?
+          </h3>
+          <p class="text-txt-pry text-xs leading-5 xl:text-2xl">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </section>
 
-    
+      <section
+        class="top-news p-4 lg:flex lg:col lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-4 lg:h-40 lg:justify-between"
+      >
+        <div class="w-full h32 flex flex-row gap-5 lg:w-80">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="PCs"
+            class="w-24 cover"
+          />
+          <div class="w-9/12 flex flex-col place-content-center gap-1">
+            <p class="text-txtsecundary font-bold text-3xl">01</p>
+            <h4
+              class="text-secundary font-bold hover:text-colorButton cursor-pointer"
+            >
+              Reviving Retro PCs
+            </h4>
+            <p class="text-txtpry text-sm">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
 
-  </script>
+        <div class="w-full h32 flex flex-row gap-5 py-4 lg:w-80 lg:py-0">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="keyword"
+            class="w-24 cover"
+          />
+          <div class="w-9/12 flex flex-col place-content-center gap-1">
+            <p class="text-txtsecundary font-bold text-3xl">02</p>
+            <h4
+              class="text-secundary font-bold hover:text-colorButton cursor-pointer"
+            >
+              Top 10 Laptops of 2022
+            </h4>
+            <p class="text-txtpry text-sm">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
 
-</head>
-<body class="xl:text-1xl ">
-  <header class="flex flex-row justify-between p-4 xl:p-8">
-    <img src="./assets/images/logo.svg" alt=""  class="w-8 h-4 xl:w-16 xl:h-8">
-    <ul id="menu" class=" absolute -top-full right-0	lg:top-0	lg:block p-8 lg:p-0 w-60 h-full bg-prymary text-lg
-          lg:w-auto lg:h-16 lg:mx-4	
-    ">
-      <li class="lg:inline-block py-4 lg:mx-2 flex justify-end
-      lg:hidden
-      "><img src="./assets/images/icon-menu-close.svg" id="menu_close"></li>
-      <li class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer">Home</li>
-      <li class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer">New</li>
-      <li class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer">Popular</li>
-      <li class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer">Trending</li>
-      <li class="lg:inline-block py-4 lg:mx-2 hover:text-colorButton cursor-pointer">Categories</li>
-    </ul>  
-    <img src="./assets/images/icon-menu.svg" alt="" id="button_menu" class="lg:hidden">
+        <div class="w-full h32 flex flex-row gap-5 lg:w-80">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="joystick"
+            class="w-24 cover"
+          />
+          <div class="w-9/12 flex flex-col place-content-center gap-1">
+            <p class="text-txtsecundary font-bold text-3xl">03</p>
+            <h4
+              class="text-secundary font-bold hover:text-colorButton cursor-pointer"
+            >
+              The Growth of Gaming
+            </h4>
+            <p class="text-txtpry text-sm">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </header>
-
-<main class="lg:grid lg:gap-4 lg:grid-cols-3 grid-rows-3 lg:py-8">
-  <section class="principal-news p-4 
-  lg:p-0 lg:mx-4 lg:h-full lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-3 
-  lg:grid lg:grid-cols-2 grid-rows-5 
-  ">
-    <div alt="" class="bg-[url('./assets/images/image-web-3-mobile.jpg')] 
-    lg:bg-[url('./assets/images/image-web-3-desktop.jpg')] w-full h-72 lg:h-full bg-cover
-    lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-4 bg-center	
-    "> </div>
-    <h1 class="font-bold text-4xl text-secundary my-4 
-     lg:col-start-1 lg:col-end-2 lg:row-start-4 lg:row-end-6 lg:text-5xl
-     xl:text-7xl
-     ">  The Bright Future of Web 3.0?
-</h1>
-    <div class="      lg:col-start-2 lg:col-end-3 lg:row-start-4 lg:row-end-6 lg:py-6
-    ">
-      <p class="text-sm	text-txtpry leading-5
-      xl:text-2xl
-      "> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-    But is it really fulfilling its promise?</p>
-      <button class="w-28 h-8 bg-colorButton my-4 text-prymary text-xs tracking-widest uppercase font-bold
-      hover:bg-secundary cursor-pointer
-      ">  Read more
-  </button>
-
-
-    </div>
-   
-  </section>
-
-
-
-  <section class="new-news self-center border-2 border-black p-4 text-prymary 
-  bg-secundary lg:h-full lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-3
-  lg:flex lg:flex-col lg:justify-self-end  
-  xl:w-full xl:p-8">
-    <h2 class="text-colorEspecial text-2xl font-bold
-    xl:text-4xl xl:py-4
-    ">New</h2>
-    <div class="py-4 border-b border-txt-pry	">
-      <h3 class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer	
-      ">  Hydrogen VS Electric Cars
-        </h3>
-      <p class="text-txt-pry text-xs leading-5 xl:text-2xl">  Will hydrogen-fueled cars ever catch up to EVs?
-      </p>
-    </div>
-
-    <div class="py-4 border-b border-txt-pryleading-5">
-      <h3 class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer"> The Downsides of AI Artistry
-        </h3>
-      <p class="text-txt-pry text-xs leading-5 xl:text-2xl"> What are the possible adverse effects of on-demand AI image generation? 
-      </p>
-    </div>
-
-    <div class="py-4">
-      <h3 class="font-bold xl:text-2xl hover:text-colorEspecial cursor-pointer">Is VC Funding Drying Up? 
-        </h3>
-      <p class="text-txt-pry text-xs leading-5 xl:text-2xl">Private funding by VC firms is down 50% YOY. We take a look at what that means.
-</p> 
-    
-    </div>
-
-    
-
-  </section>
-
-
-  <section class="top-news p-4 lg:flex lg:col lg:col-start-1 lg:col-end-4 lg:row-start-3 lg:row-end-4 lg:h-40 lg:justify-between">
-    <div class="w-full h32 flex flex-row gap-5 lg:w-80">
-
-      <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-24	cover ">
-      <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-3xl	">  01
-</p>
-        <h4 class="text-secundary font-bold hover:text-colorButton cursor-pointer">  Reviving Retro PCs
-</h4>
-        <p class="text-txtpry text-sm	">  What happens when old PCs are given modern upgrades?
-</p>
-      </div>
-    </div>
-
-
-    <div class="w-full h32 flex flex-row gap-5 py-4 lg:w-80 lg:py-0">
-      <img src="./assets/images/image-top-laptops.jpg" alt="" class="w-24	cover ">
-      <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-3xl	">  02
-</p>
-        <h4 class="text-secundary font-bold hover:text-colorButton cursor-pointer"> Top 10 Laptops of 2022 
-</h4>
-        <p class="text-txtpry text-sm	"> Our best picks for various needs and budgets. 
-</p>
-      </div>
-    </div>
-
-    <div class="w-full h32 flex flex-row gap-5 lg:w-80">
-      <img src="./assets/images/image-gaming-growth.jpg" alt="" class="w-24	cover ">
-      <div class="w-9/12 flex flex-col place-content-center gap-1">
-        <p class="text-txtsecundary font-bold text-3xl	">  03
-</p>
-        <h4 class="text-secundary font-bold hover:text-colorButton cursor-pointer"> The Growth of Gaming
-</h4>
-        <p class="text-txtpry text-sm	"> How the pandemic has sparked fresh opportunities.
-</p>
-      </div>
-    </div>
-
-   
-  </section>
-</main>
- 
-<script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
